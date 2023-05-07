@@ -1,12 +1,12 @@
 version: '3'
 
 services:
-  digapp_usermanagment_ms:
-    container_name: digapp_usermanagment_ms
+  digapp_auth_ms:
+    container_name: digapp_auth_ms
     restart: always
     build: .
     ports: 
-      - "4000:3000"
+      - "3000:3000"
     links:
       - digapp_usermanagment_db
   

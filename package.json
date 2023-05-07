@@ -1,18 +1,27 @@
 {
-  "dependencies": {
-    "express": "^4.18.2",
-    "mongodb": "^5.1.0",
-    "mongoose": "^7.0.1"
-  },
-  "name": "swarch2023i_p1",
+  "name": "digauthentication",
   "version": "1.0.0",
+  "description": "This is the Authentication MicroService for DIGAPP",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node digapp_UserManagement_ms/index.js",
-    "seed": "node digapp_UserManagement_ms/seed.js"
+    "dev": "npx nodemon src/index.js",
+    "start": "node ./src/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Dave Rios",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.1.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }
