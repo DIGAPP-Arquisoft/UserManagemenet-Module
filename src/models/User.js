@@ -18,7 +18,7 @@ const userSchema = new Schema({
     UserPhoto: {type: String},
     City: {type: Number},
 }, {
-    timestamps: true,
+    // timestamps: true,
     versionKey: false
 })
 

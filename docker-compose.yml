@@ -7,11 +7,11 @@ services:
     build: .
     ports: 
       - "3000:3000"
-    links:
-      - digapp_usermanagment_db
+    depends_on:
+      - digapp_auth_db
   
-  digapp_usermanagment_db:
-    container_name: digapp_usermanagment_db
+  digapp_auth_db:
+    container_name: digapp_auth_db
     image: mongo
     ports:
       - "27017:27017"
